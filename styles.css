@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 8%;
+    background-color: antiquewhite;
+}
+
+#quoteContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #dfdcdc;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h1 {
+    margin-bottom: 5%;
+    font-size: 5rem;
+}
+
+#date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+#inputQuote {
+    width: 90%;
+    padding: 5%;
+    margin-bottom: 8%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid black;
+    word-break: break-word;
+    text-wrap: pretty;
+    animation: changeColor 3s infinite;
+    color: yellow;
+    background-color: rgb(238, 103, 250);
+}
+
+@keyframes changeColor {
+    0% {background-color: blue;}
+    50% {background-color: red};
+    100% {background-color: green};
+}
+
+#button {
+    padding: 2%;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: darkgray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: gray;
+}
