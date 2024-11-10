@@ -5,7 +5,6 @@
 }
 
 body {
-    padding-top: 8%;
     background-color: antiquewhite;
 }
 
@@ -14,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 7% auto 0;
     background-color: #dfdcdc;
     max-width: 800px;
     padding: 20px;
@@ -27,7 +26,7 @@ h1 {
 }
 
 #date {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 2%;
 }
@@ -65,4 +64,22 @@ h1 {
 
 #button:hover {
     background-color: gray;
+}
+
+
+@media screen and (max-width: 885px) {
+    #quoteContainer {
+        margin: 25% auto 0;
+        max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #quoteContainer {
+        max-width: 350px;
+    }
+    #date {
+        font-size: 1rem;
+    }
+
 }
